@@ -1,0 +1,21 @@
+# Configuratio de dependabot
+---
+version: 2
+updates:
+# Configuration pour Go
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-type: "direct"
+        update-type: "semver:minor"
+
+# Configuration pour Docker
+---
+version: 2
+updates:
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
