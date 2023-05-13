@@ -2,7 +2,7 @@ name: Dependabot
 
 on:
   schedule:
-    - cron: '* * * * *' # Run every minute
+    - cron: '0 0 * * *' # Exécuter tous les jours à minuit
 
 jobs:
   dependabot:
